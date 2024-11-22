@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conteúdo +18</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #ff4d4d;
+      border-radius: 8px;
+      background-color: #1e1e1e;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #ff4d4d;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #ff6666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Aviso de Idade</h1>
+    <p>Este site contém conteúdo destinado a maiores de 18 anos. Confirme sua idade para continuar.</p>
+    <button class="btn" onclick="enterSite()">Tenho mais de 18 anos</button>
+    <button class="btn" onclick="exitSite()">Não tenho 18 anos</button>
+  </div>
+
+  <script>
+    function enterSite() {
+      alert('Bem-vindo! Você será redirecionado ao conteúdo.');
+      window.location.href = 'dashboard.html'; // Altere para a página do conteúdo.
+    }
+
+    function exitSite() {
+      alert('Você será redirecionado para outra página.');
+      window.location.href = 'https://www.google.com'; // Altere para a página que desejar.
+    }
+  </script>
+</body>
+</html>
